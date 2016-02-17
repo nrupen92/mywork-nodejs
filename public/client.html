@@ -9,8 +9,11 @@ function WebSocketTest()
   {
      alert("WebSocket is supported by your Browser!");
      
-     var ws = new WebSocket("ws://"+window.location.host, 'echo-protocol');
-
+     if(window.location.protocol == "https"){
+     var ws = new WebSocket("wss://"+window.location.host, 'echo-protocol');
+     }else {
+    	 var ws = new WebSocket("ws://"+window.location.host, 'echo-protocol');
+     }
      
      ws.onopen = function()
      {
