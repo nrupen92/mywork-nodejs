@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "websocket": "^1.4.21",
+    "websocket": "^1.4.21"
  }
 }
