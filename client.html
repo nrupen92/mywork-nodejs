@@ -15,14 +15,15 @@ function WebSocketTest()
      ws.onopen = function()
      {
         // Web Socket is connected, send data using send()
-        ws.send("How are you?");              
+        ws.send("How are you?");        
+alert("Message sent : How are you?");		
      };
 
      // The message event occurs when client receives data from server.
      ws.onmessage = function (evt) 
      { 
         var received_msg = evt.data;
-        alert(received_msg);
+        alert("message received: "+received_msg);
      };
 
      // The close event occurs when connection is closed.

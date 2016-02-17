@@ -9,7 +9,7 @@
 //       var WebSocketServer = require("ws").Server 
 // - Please refer Zhomart Mukhamejanov's example if you want to deploy server.js on Heroku
 // - Please refer Vidit Mody's use of ws protocol
-var WebSocketServer = require('/usr/local/lib/node_modules/websocket').server;
+var WebSocketServer = require('websocket').server;
 var http = require('http');
 
 var server = http.createServer(function(request, response) {
